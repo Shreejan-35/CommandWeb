@@ -1,5 +1,5 @@
 # **Command Web**
-
+![](https://github.com/Shreejan-35/CommandWeb/blob/master/static/CommandLogo.png)
 As we all know that, ![CommandConsole](https://github.com/Shreejan-35/CommandConsole) - a shell, which is being published recently in Github, is being downloaded and used by many.
 
 So, I decided to make a **docs** website for it, in which there should be :-
