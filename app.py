@@ -13,6 +13,10 @@ def login():
 def overview():
     return render_template('overview.html')
 
+@app.route('/GetStared')
+def download():
+    return render_template('GetStared.html')
+
 @app.route('/download')
 def download():
     return render_template('download.html')

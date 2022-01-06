@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>CommandWeb: Get Started</title>
+  </head>
+
+  <body style="align-items: center">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand">CommandConsole</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="/" class="nav-item nav-link">Home</a>
+            <a href="/overview" class="nav-item nav-link">Overview</a>
+            <a href="/GetStared" class="nav-item nav-link active"
+              >Get Started</a
+            >
+          </div>
+          <div class="navbar-nav ms-auto">
+            <a href="#" class="nav-item nav-link">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Main cards-->
+    <div class="card my-1 mx-1">
+      <h5 class="card-header"></h5>
+      <div class="card-body">
+        <h5 class="card-title">INSTALLATION</h5>
+        <br>
+        <p class="card-text">
+        <ol>
+          <li><b>Initial Installation:-</b></li><br>
+          <p style="align-items: center;">
+              There are two ways to for initial installation of <code>CommandConsole</code>.
+              <br>
+              First, you can download CommandConsole through Github. You need to head over to the CommandConsole repository,
+              after that click on the green <code>Code</code> button and then you can select either:-
+              <ul>
+                  <li><b>Download ZIP</b></li>
+                  <li><b>Clone</b>
+                      <br>
+                      <p>For cloning, open the git CLI in your local computer, then type this command - <code>git clone https://github.com/Shreejan-35/CommandConsole.git</code>. After that hit enter and it will clone
+                    clone the repository and you can use <b>CommandConsole</b>.</p>
+                  </li>
+                
+              </ul>
+            Second, you can download CommandConsole from the <a href="/download">download</a> section. It is more suitable then any others as it locates the files and folders in the accurate and specific positions. <br>
+            And it is best for normal people. (There you can get only the latest version).
+          <li><b>Testing in Docker:-</b></li><br>
+          If you want to test the application, you can do it in docker.
+          The steps to execute the application using docker are as follows:-
+          <ol>
+            <li>Type:- docker run -it shreejan35/commandconsole:version(All the version you can see in docker hub, the link is given down)</li>
+            <li>It will pull the image from the docker hub and execute it.</li>
+            <li>You can execute all the commands in the home directory.</li>
+            <li>You may not be able run the <code>update.sh</code> in docker.</li>
+            <li>Link to the docker hub:- <a href="https://hub.docker.com/repository/docker/shreejan35/commandconsole">shreejan35/commandconsole</a></li>
+          </ol>
+        </ol>
+          </p>
+        </p>
+      </div>
+    </div>
+
+    <!--Javascript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
