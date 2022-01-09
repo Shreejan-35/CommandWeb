@@ -35,19 +35,16 @@
             <a href="/overview" class="nav-item nav-link">Overview</a>
             <a href="/GetStarted" class="nav-item nav-link">Get Started</a>
           </div>
-          <div class="navbar-nav">
-            <a href="/" class="nav-item nav-link active" id = "name"></a>
-          </div>
           <div class="navbar-nav ms-auto">
-            <a href="/login" class="nav-item nav-link active">Login</a>
-            <a href="/register" class="nav-item nav-link">Register</a>
+            <a href="/login" class="nav-item nav-link">Login</a>
+            <a href="/register" class="nav-item nav-link active">Register</a>
           </div>
         </div>
       </div>
     </nav>
 
     <!--Login form-->
-    <form action="/login" method="POST">
+    <form action="/register" method="POST">
     <div class="mb-3 row my-5 mx-5">
       <label for="exampleFormControlInput1" class="form-label">Username</label>
         <input type="text" class="form-control" name="username" id="exampleFormControlInput1" placeholder="Username">
@@ -57,17 +54,12 @@
       <label for="exampleFormControlInput1" class="form-label">Password</label>
       <input type="password" class="form-control" name="password" id="inputPassword" placeholder="password"/>
       <div class="col-sm-10 my-4">
-    <button type="submit" class="btn btn-primary mb-3">Login</button>
+    <button type="submit" class="btn btn-primary mb-3" id="registered">Register</button>
+
   </div>
     </div>
     </form>
-    
-    {% for valids in finallist %}
-     <div id="IsUser" style="display: none; visibility:hidden">{{ IsUser }}</div>
-    <div id="IsPassword" style="display: none; visibility:hidden">{{ IsPassword }}</div>
-    <div id="UserName" style="display: none; visibility:hidden">{{ UserName }}</div> 
-    {% endfor %}
-  
+
     <!--Javascript-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
